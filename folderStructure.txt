@@ -1,0 +1,27 @@
+
+folder Structure:
+------------------
+app.js:- This file starts your web server. All your set up logic should be in this file.
+
+config.js:- Node-config allows you to create configuration files in your Node application 
+for different deployment environments.
+config.js:- This file should contain all your configuration e.g. PORT number, secrets, 
+keys etc. Do not commit this file to Git.
+
+Controllers:- This folder contains all the business logic of your application. There should be a file 
+for each type of control. e.g. If you want to perform operations on users there should be 
+UserController.js file. If you want analytics there should be AnalyticsController.js.
+
+Models:- All the database models should go into the models folder. Again you should write each model 
+into its own file. e.g. User model in UserModel.js.
+
+Public:- All the public files such as images, javascript files, CSS files should go into this folder. 
+You should divide your files into their own folder.
+
+Routes:- All your routing-related logic should go into this folder. Again divide this logic into 
+multiple files based on functionality. i.e User routing functionality should go into UserRouter.js.
+
+Views:- So this folder contains all your views i.e. HTML/ejs files. Drop this folder if you are 
+building rest API’s.
+
+
